@@ -1,6 +1,6 @@
 <h1>My card selected was {{cardNumber}}</h1>
 <button (click)="onStart()">Start</button>
-<button >Stop</button>
+<button (click)="onStop()">Stop</button>
 <div class="wrapper">
   <div *ngFor="let card of cardsArray; let index" >
     <app-card *ngIf="index % 2 === 0"
